@@ -1,0 +1,69 @@
+.trainer__list {
+  .reset();
+  list-style: none;
+}
+
+.trainer__item {
+  width: 100%;
+  padding: 50px;
+  padding-bottom: 45px;
+  margin-bottom: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.trainer__img {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer__info {
+  width: 65%;
+  padding-left: 40px;
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  .trainer__name {
+    margin-bottom: 25px;
+  }
+  .trainer__title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.trainer__name {
+  padding-top: 15px;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.trainer__title {
+  font-size: 24px;
+}
+
+.trainer__points {
+  .reset();
+  list-style: none;
+  
+  li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 3px;
+    
+    &::before {
+      content: "-";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
