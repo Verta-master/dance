@@ -925,6 +925,12 @@ h2,
   -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 1, 0.1);
           box-shadow: 0px 3px 20px 0px rgba(0, 0, 1, 0.1);
 }
+.news--internal {
+  padding-top: 0;
+  padding-bottom: 150px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .news__list {
   margin: 0;
   padding: 0;
@@ -1005,6 +1011,11 @@ h2,
 .news__link:hover,
 .news__link:active {
   text-decoration: none;
+}
+.news__btn {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .benefits {
   padding-top: 55px;
@@ -1640,6 +1651,9 @@ a.breadcrumbs__link:active {
   .form__input,
   .form__select {
     width: 30.5%;
+  }
+  .news--internal {
+    padding-bottom: 50px;
   }
 }
 @media (max-width: 1022px) {
