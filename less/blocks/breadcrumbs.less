@@ -1,0 +1,27 @@
+.breadcrumbs {
+  margin-bottom: 30px;
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 20px;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #888888;
+}
+
+a.breadcrumbs__link {
+  &::after {
+    content: "\2014";
+    position: absolute;
+    top: 0;
+    right: -17px;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
