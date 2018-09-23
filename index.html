@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Танцевально-спортивный центр «Форум»</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -70,7 +71,7 @@
       </address>
       <div class="header__phone">
         <a href="tel:+79057757347" class="header__call">8 (905) 775-73-47</a>
-        <a href="#" class="header__link">Заказать звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="header__link">Заказать звонок</a>
       </div>
     </div>
     <div class="header__nav">
@@ -370,7 +371,7 @@
         </div>
         <div class="footer__call">
           <a href="tel:+79057757347" class="footer__phone">8 (905) 775-73-47</a>
-          <a href="#" class="footer__btn">Заказать звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="footer__btn">Заказать звонок</a>
         </div>
       </div>
     </div>
@@ -380,7 +381,21 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" method="post" class="modal__form">
+      <input type="text" class="modal__input" placeholder="Ваше имя">
+      <input type="text" class="modal__input" placeholder="Телефон">
+      <input type="checkbox" id="check" class="checkbox">
+      <label for="check" class="checkbox__label">Я не робот</label>
+      <button type="submit" class="modal__btn">Перезвоните мне</button>
+    </form>
+    <p class="modal__comment">Наш менеджер свяжется с вами в течене 10 минут</p>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
