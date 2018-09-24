@@ -1968,13 +1968,6 @@ a.breadcrumbs__link:active {
 .tabs__item:nth-child(3n) {
   margin-right: 0;
 }
-.tabs__item:hover .tabs__content img,
-.tabs__item:active .tabs__content img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
 .tabs__item:hover .tabs__video svg,
 .tabs__item:active .tabs__video svg {
   fill: #6cd92b;
@@ -1997,8 +1990,11 @@ a.breadcrumbs__link:active {
 }
 .tabs__content img {
   display: block;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tabs__links {
   display: -webkit-box;
